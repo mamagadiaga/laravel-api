@@ -25,45 +25,66 @@ La documentation de Laravel est l'une des plus complètes et des plus détaillé
 Vous êtes encouragés à contribuer au développement continu de Laravel ! Consultez le [guide de contribution](https://laravel.com/docs/contributions) pour savoir comment participer.
 
 ## Installation
-cloner le depot
 
-git clone https://github.com/mamagadiaga/laravel-api.git
+1. Clonez le dépôt :
 
-installer Composer
+    ```
+    git clone https://github.com/mamagadiaga/laravel-api.git
+    ```
 
-https://getcomposer.org/download/
+2. Installez Composer (si ce n'est pas déjà fait) en suivant les instructions sur [getcomposer.org](https://getcomposer.org/download/).
 
-composer update/install
+3. Mettez à jour/installer les dépendances avec Composer :
 
-composer install
+    ```
+    composer update
+    ```
 
-Install Nodejs
+    ou
 
-https://nodejs.org/en/download/
+    ```
+    composer install
+    ```
 
-npm install
+4. Installez Node.js (si ce n'est pas déjà fait) en suivant les instructions sur [nodejs.org](https://nodejs.org/en/download/).
 
-Run Vite
+5. Installez les dépendances Node.js :
 
-npm run dev
+    ```
+    npm install
+    ```
 
-Go into .env file change Database and Email credentials. Then setup some configuration with your own credentials
+6. Lancez Vite :
 
-Run the migration
+    ```
+    npm run dev
+    ```
 
-php artisan migrate
+7. Allez dans le fichier `.env` et modifiez les informations de base de données et de messagerie électronique selon vos propres identifiants. Ensuite, configurez certaines configurations avec vos propres informations d'identification.
 
-Or run the migration with seeder if you want seeding the related data
+8. Exécutez la migration pour créer les tables de base de données :
 
-php artisan migrate --seed
+    ```
+    php artisan migrate
+    ```
 
-Generate a New Application Key
+    ou si vous souhaitez également remplir la base de données avec des données de test :
 
-php artisan key:generate
+    ```
+    php artisan migrate --seed
+    ```
 
-Create a symbolic link
+9. Générez une nouvelle clé d'application Laravel :
 
-php artisan storage:link
+    ```
+    php artisan key:generate
+    ```
+
+10. Créez un lien symbolique pour le stockage :
+
+    ```
+    php artisan storage:link
+    ```
 
 ## Licence
 
