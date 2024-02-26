@@ -1,65 +1,70 @@
+# Découvrez Laravel
+
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
-## About Laravel
+Laravel représente bien plus qu'un simple framework pour le développement web. Il incarne une approche où la créativité rencontre l'efficacité, offrant une expérience de développement fluide et enrichissante. Laravel simplifie les tâches récurrentes dans la création d'applications web, offrant des fonctionnalités telles que :
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+- [Un système de routage simple et performant](https://laravel.com/docs/routing).
+- [Un conteneur d'injection de dépendances puissant](https://laravel.com/docs/container).
+- Prise en charge de plusieurs back-ends pour le [stockage de session](https://laravel.com/docs/session) et le [cache](https://laravel.com/docs/cache).
+- ORM de base de données expressif et intuitif, connu sous le nom d'[Eloquent](https://laravel.com/docs/eloquent).
+- [Migrations de schéma](https://laravel.com/docs/migrations) indépendantes de la base de données.
+- Gestion robuste des [tâches en arrière-plan](https://laravel.com/docs/queues).
+- Diffusion en temps réel des événements avec [Broadcasting](https://laravel.com/docs/broadcasting).
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Laravel offre la puissance nécessaire pour les projets les plus ambitieux, tout en restant accessible à tous les niveaux d'expérience.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+## Apprendre et Maîtriser
 
-## Learning Laravel
+La documentation de Laravel est l'une des plus complètes et des plus détaillées, accompagnée d'une vaste bibliothèque de tutoriels vidéo. Cela rend l'apprentissage et la maîtrise du framework à la portée de tous.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
+## Contribuer au Projet
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+Vous êtes encouragés à contribuer au développement continu de Laravel ! Consultez le [guide de contribution](https://laravel.com/docs/contributions) pour savoir comment participer.
 
-## Laravel Sponsors
+## Installation
+cloner le depot
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
+git clone https://github.com/mamagadiaga/laravel-api.git
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
+installer Composer
 
-## Contributing
+https://getcomposer.org/download/
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+composer update/install
 
-## Security Vulnerabilities
+composer install
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Install Nodejs
 
-## License
+https://nodejs.org/en/download/
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+npm install
+
+Run Vite
+
+npm run dev
+
+Go into .env file change Database and Email credentials. Then setup some configuration with your own credentials
+
+Run the migration
+
+php artisan migrate
+
+Or run the migration with seeder if you want seeding the related data
+
+php artisan migrate --seed
+
+Generate a New Application Key
+
+php artisan key:generate
+
+Create a symbolic link
+
+php artisan storage:link
+
+## Licence
+
+Laravel est un framework open-source distribué sous la licence [MIT](https://opensource.org/licenses/MIT).
