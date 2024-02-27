@@ -4,20 +4,20 @@
 				<li>
 					<i class="icon-home"></i>
 					<a href="index.html">Home</a>
-					<i class="icon-angle-right"></i>
+					<i class="icon-angle-right"></i> 
 				</li>
 				<li>
 					<i class="icon-edit"></i>
 					<a href="#">Add Product</a>
 				</li>
 			</ul>
-
+			
 			<div class="row-fluid sortable">
 				<div class="box span12">
 					<div class="box-header" data-original-title>
 						<h2><i class="halflings-icon edit"></i><span class="break"></span>Add Product</h2>
 					</div>
-					<div class="box-content">
+					<div class="box-content">                   
                          <p class="alert-success">
 							<?php
 							$message = Session::get('message');
@@ -27,9 +27,9 @@
 							}
 						?>
 						</p>
-
+                 
 						<form class="form-horizontal" action="{{url('/save-product')}}" method="POST" enctype="multipart/form-data">
-							{{ csrf_field() }}
+							{{ csrf_field() }} 
 						  <fieldset>
 
 							<div class="control-group">
@@ -78,7 +78,7 @@
 							  <div class="controls">
 								<textarea  class="cleditor" name="product_short_description" rows="3" required=""></textarea>
 							  </div>
-							</div>
+							</div>  
 
 
                             <div class="control-group hidden-phone">
@@ -86,7 +86,7 @@
 							  <div class="controls">
 								<textarea class="cleditor" name="product_long_description" rows="3" required=""></textarea>
 							  </div>
-							</div>
+							</div>  
 
 
                             <div class="control-group">
@@ -123,15 +123,15 @@
 							  <div class="controls">
 								<input class="input-file uniform_on" name="publication_status" value="1" type="checkbox" >
 							  </div>
-							</div>
+							</div>  
 
 							<div class="form-actions">
 							  <button type="submit" class="btn btn-primary">Add Product</button>
 							  <button type="reset" class="btn">Cancel</button>
 							</div>
 						  </fieldset>
-						</form>
+						</form>   
 					</div>
-				</div>
-			</div>
+				</div><!--/span-->
+			</div><!--/row-->
 @endsection
